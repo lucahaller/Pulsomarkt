@@ -1,0 +1,22 @@
+@layer tailwind-base, primereact, tailwind-utilities;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.898);
+  }
+  .text-shadow-dark {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  .text-shadow-blue {
+    text-shadow: 3px 3px 3px rgba(0, 0, 255, 0.4);
+  }
+}

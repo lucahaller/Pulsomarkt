@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "node_modules/flowbite-react/lib/esm/**/*.js",
+  ],
   theme: {
     screens: {
       xs: "300px",
@@ -20,6 +23,10 @@ module.exports = {
       fontFamily: {
         sans: ["Oswald", "sans-serif"],
         bebas: ["Bebas Neue", "sans-serif"],
+        nunito: ["Nunito", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+        zain: ["Zain", "sans-serif"],
+        raleway: ["Raleway", "sans-serif"],
       },
       fontSize: {
         "8xl": "6rem", // 96px
@@ -39,13 +46,14 @@ module.exports = {
       function ({ addUtilities }) {
         addUtilities({
           ".text-shadow": {
-            textShadow: "1px 1px 2px rgba(1, 0, 0, 0.3)", // Personaliza esta sombra
+            textShadow: "8px 8px 15px rgba(255, 255, 255, 0.9)", // Personaliza esta sombra
           },
           ".text-shadow-lg": {
             textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)", // Personaliza esta sombra
           },
         });
       },
+      require("flowbite/plugin", "tw-elements/plugin.cjs"),
     ],
   },
 };

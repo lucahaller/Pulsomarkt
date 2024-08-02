@@ -25,49 +25,49 @@ const Project = () => {
     });
   });
   return (
-    <div className="h-full">
+    <div className="h-full w-full overflow-x-hidden">
       <Nav className="bg-transparent" />
       <section
         id="#landing"
-        className="flex justify-start  items-center bg-cover bg-center overflow-x-hidden  h-screen w-full "
+        className="flex justify-start items-center bg-cover bg-center overflow-x-hidden h-screen w-full"
         style={{ backgroundImage: `url(${first})` }}
       >
-        <div className="text-white lg:ml-40 ml-10">
-          <div className="lg:text-8xl text-8xl flex flex-col gap-0 p-0 leading-none">
-            <p className="m-0 text-shadow font-raleway  ">DIGITAL</p>
-            <p className="m-0 text-shadow font-raleway  ">MARKETING</p>
+        <div className="text-white lg:ml-40 ml-10 lg:gap-6 gap-4">
+          <div className="lg:text-8xl text-6xl md:text-7xl flex flex-col gap-0 p-0 leading-none">
+            <p className="m-0 text-shadow font-raleway">DIGITAL</p>
+            <p className="m-0 text-shadow font-raleway">MARKETING</p>
           </div>
-
-          <p className="text-3xl font-mono">AND WEB SOLUTIONS</p>
+          <p className="text-xl md:text-2xl lg:text-3xl font-mono mt-2 lg:mt-4">
+            AND WEB SOLUTIONS
+          </p>
         </div>
       </section>
+
       <section
         id="about"
         style={{ backgroundImage: `url(${second})` }}
-        className="flex h-screen items-center justify-end w-full bg-cover bg-center"
+        className="flex h-screen items-center justify-end w-full bg-center bg-no-repeat  bg-cover md:bg-center lg:bg-center lg:bg-cover"
       >
-        <div className="w-[650px] mr-80 gap-14 flex flex-col">
-          <div className="text-white text-5xl font-sans ">
-            <p>Potencia tu presencia </p>
+        <div className="w-full lg:w-[650px] lg:mr-80 lg:gap-14 gap-8 px-8 lg:px-0 flex flex-col">
+          <div className="text-white text-4xl md:text-5xl font-sans">
+            <p>Potencia tu presencia</p>
             <p className="flex flex-row gap-3">
-              {" "}
-              digital con {""}{" "}
-              <p
+              digital con{" "}
+              <span
                 data-aos="fade-left"
                 data-aos-anchor-placement="center-bottom"
-                className="font-semibold "
+                className="font-semibold"
               >
-                {" "}
                 Pulsomarkt
-              </p>
+              </span>
             </p>
           </div>
-          <div className="flex flex-col gap-14  pr-28">
-            <p className="text-white text-2xl font-sans">
+          <div className="flex flex-col gap-8 lg:gap-14 lg:pr-28">
+            <p className="text-white text-lg md:text-xl lg:text-2xl font-sans">
               Especializados en SEO, páginas web y marketing en redes sociales,
               tenemos la solución perfecta para cada necesidad.
             </p>
-            <p className="text-white text-2xl font-sans">
+            <p className="text-white text-lg md:text-xl lg:text-2xl font-sans">
               Únete a nosotros y descubre cómo podemos aumentar tu visibilidad,
               atraer a tu público objetivo y hacer crecer tu negocio de manera
               sostenible.
@@ -75,28 +75,29 @@ const Project = () => {
           </div>
         </div>
       </section>
+
       <section
         style={{ backgroundImage: `url(${third})` }}
-        className="flex h-screen items-center justify-start w-full bg-cover bg-center"
+        className="flex flex-col lg:flex-row h-screen items-center justify-start w-full bg-cover bg-center"
       >
-        <div className="w-[600px] ml-80 gap-10 flex flex-col">
+        <div className="w-full h-full lg:w-[600px] lg:ml-80  gap-10 flex flex-col items-center lg:items-start p-5">
           <div
-            className="text-white text-5xl font-sans font-bold"
+            className="text-white text-3xl lg:text-5xl font-sans font-bold text-center lg:text-left"
             data-aos="fade-down-right"
             data-aos-anchor-placement="center-bottom"
           >
             <p>Tu éxito es nuestra prioridad </p>
           </div>
           <div
-            className="flex flex-col gap-5 text-justify"
+            className="flex flex-col gap-5 text-justify text-center lg:text-left"
             data-aos="fade-right"
             data-aos-anchor-placement="center-bottom"
           >
-            <p className="text-white text-2xl font-sans">
+            <p className="text-white text-lg lg:text-2xl font-sans">
               En Pulsomarkt, entendemos que cada negocio es único y merece una
               estrategia de marketing digital a su medida.
             </p>
-            <p className="text-white text-2xl font-sans">
+            <p className="text-white text-lg lg:text-2xl font-sans">
               Por eso trabajamos estrechamente contigo para entender tus
               objetivos y diseñar un plan que se ajuste perfectamente a tus
               necesidades.
@@ -106,7 +107,7 @@ const Project = () => {
             data-aos="flip-right"
             data-aos-anchor-placement="center-bottom"
             href="/#contacto"
-            className="px-8 py-3 bg-white hover:bg-gray-400 hover:text-gray-200 text-black font-sans font-semibold text-xl w-fit"
+            className="px-6 py-2 lg:px-8 lg:py-3 bg-white hover:bg-gray-400 hover:text-gray-200 text-black font-sans font-semibold text-lg lg:text-xl w-fit"
           >
             Contactar
           </a>
@@ -114,12 +115,11 @@ const Project = () => {
         <div
           data-aos="fade-left"
           data-aos-anchor-placement="center-bottom"
-          className="ml-auto mr-44"
+          className="hidden lg:block ml-auto mr-10"
         >
-          <img src={espiral} />
+          <img src={espiral} alt="Espiral" />
         </div>
       </section>
-
       <section
         id="services"
         style={{
@@ -130,22 +130,29 @@ const Project = () => {
         }}
         className="flex h-screen w-full items-start justify-center"
       >
-        <div className="flex flex-col mt-40 gap-16">
-          <div
-            data-aos="fade-down-right"
-            data-aos-anchor-placement="center-bottom"
-          >
-            <p className="text-4xl text-white ">
-              {" "}
-              Explora nuestros servicios personalizados para cada necesidad
-              digital.
-            </p>
+        <div className="flex flex-col mt-3 gap-16">
+          <div className="flex flex-col items-center mt-40 px-4 lg:px-0 lg:items-start lg:mt-40 lg:flex-col gap-5 lg:justify-start">
+            <div
+              data-aos="fade-down-right"
+              data-aos-anchor-placement="center-bottom"
+              className="text-center lg:text-left w-full lg:w-auto"
+            >
+              <p className="text-4xl text-white">
+                Explora nuestros servicios personalizados para cada necesidad
+                digital.
+              </p>
+            </div>
+            <div
+              data-aos="fade-left"
+              data-aos-anchor-placement="center-bottom"
+              className="text-center lg:text-left mt-8 lg:mt-0 w-full lg:w-auto"
+            >
+              <p className="text-6xl text-white font-semibold">
+                ¡Tenemos la estrategia perfecta para ti!
+              </p>
+            </div>
           </div>
-          <div data-aos="fade-left" data-aos-anchor-placement="center-bottom">
-            <p className="text-6xl text-white font-semibold">
-              ¡Tenemos la estrategia perfecta para ti!
-            </p>
-          </div>
+
           <div
             className="flex flex-row gap-20"
             data-aos="flip-left"
@@ -209,7 +216,8 @@ const Project = () => {
           </div>
         </div>
       </section>
-      <section
+
+      {/* <section
         style={{
           backgroundImage: `url(${fith})`,
           backgroundSize: "cover", // Asegura que cubra todo el contenedor
@@ -594,7 +602,7 @@ const Project = () => {
             </form>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

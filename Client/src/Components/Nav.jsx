@@ -16,13 +16,13 @@ export default function Nav() {
         <Navbar.Link className="text-lg" href="/">
           Inicio
         </Navbar.Link>
-        <Navbar.Link className="text-lg" href="/#">
+        <Navbar.Link className="text-lg" href="/#services">
           Servicios
         </Navbar.Link>
-        <Navbar.Link className="text-lg" href="/#">
+        <Navbar.Link className="text-lg" href="/#about">
           Sobre Nosotros
         </Navbar.Link>
-        <Navbar.Link className="text-lg" href="/#">
+        <Navbar.Link className="text-lg" href="/#contacto">
           Contacto
         </Navbar.Link>
       </Navbar.Collapse>

@@ -13,6 +13,9 @@ import texto from "../Assets/Images/DIGITAL.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Nav from "./Nav";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+
 const Project = () => {
   useEffect(() => {
     AOS.init({
@@ -39,6 +42,7 @@ const Project = () => {
         </div>
       </section>
       <section
+        id="about"
         style={{ backgroundImage: `url(${second})` }}
         className="flex h-screen items-center justify-end w-full bg-cover bg-center"
       >
@@ -47,7 +51,15 @@ const Project = () => {
             <p>Potencia tu presencia </p>
             <p className="flex flex-row gap-3">
               {" "}
-              digital con {""} <p className="font-semibold "> Pulsomarkt</p>
+              digital con {""}{" "}
+              <p
+                data-aos="fade-left"
+                data-aos-anchor-placement="center-bottom"
+                className="font-semibold "
+              >
+                {" "}
+                Pulsomarkt
+              </p>
             </p>
           </div>
           <div className="flex flex-col gap-14  pr-28">
@@ -68,10 +80,18 @@ const Project = () => {
         className="flex h-screen items-center justify-start w-full bg-cover bg-center"
       >
         <div className="w-[600px] ml-80 gap-10 flex flex-col">
-          <div className="text-white text-5xl font-sans font-bold">
+          <div
+            className="text-white text-5xl font-sans font-bold"
+            data-aos="fade-down-right"
+            data-aos-anchor-placement="center-bottom"
+          >
             <p>Tu éxito es nuestra prioridad </p>
           </div>
-          <div className="flex flex-col gap-5 text-justify">
+          <div
+            className="flex flex-col gap-5 text-justify"
+            data-aos="fade-right"
+            data-aos-anchor-placement="center-bottom"
+          >
             <p className="text-white text-2xl font-sans">
               En Pulsomarkt, entendemos que cada negocio es único y merece una
               estrategia de marketing digital a su medida.
@@ -82,9 +102,14 @@ const Project = () => {
               necesidades.
             </p>
           </div>
-          <button className="px-8 py-3 bg-white hover:bg-gray-400 hover:text-gray-200 text-black font-sans font-semibold text-xl w-fit">
+          <a
+            data-aos="flip-right"
+            data-aos-anchor-placement="center-bottom"
+            href="/#contacto"
+            className="px-8 py-3 bg-white hover:bg-gray-400 hover:text-gray-200 text-black font-sans font-semibold text-xl w-fit"
+          >
             Contactar
-          </button>
+          </a>
         </div>
         <div
           data-aos="fade-left"
@@ -96,6 +121,7 @@ const Project = () => {
       </section>
 
       <section
+        id="services"
         style={{
           backgroundImage: `url(${forth})`,
           backgroundSize: "cover", // Asegura que cubra todo el contenedor
@@ -105,30 +131,48 @@ const Project = () => {
         className="flex h-screen w-full items-start justify-center"
       >
         <div className="flex flex-col mt-40 gap-16">
-          <div>
+          <div
+            data-aos="fade-down-right"
+            data-aos-anchor-placement="center-bottom"
+          >
             <p className="text-4xl text-white ">
               {" "}
               Explora nuestros servicios personalizados para cada necesidad
               digital.
             </p>
           </div>
-          <div>
+          <div data-aos="fade-left" data-aos-anchor-placement="center-bottom">
             <p className="text-6xl text-white font-semibold">
               ¡Tenemos la estrategia perfecta para ti!
             </p>
           </div>
-          <div className="flex flex-row gap-20">
-            <div className="bg-white flex flex-col gap-4 py-10 p-5 w-96">
+          <div
+            className="flex flex-row gap-20"
+            data-aos="flip-left"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <div
+              data-aos="flip-right"
+              data-aos-anchor-placement="center-bottom"
+              className="bg-white flex flex-col gap-4 py-10 p-5 w-96"
+            >
               <p className="text-4xl font-bold text-fuchsia-500">*SEO & SEM</p>
               <p className="text-2xl font-extralight">
                 Aumenta tu visibilidad online con nuestras estrategias de SEO y
                 SEM. Mejoramos tu posicionamiento en los motores de búsqueda.
               </p>
-              <button className="py-3 bg-gradient-to-r text-3xl mt-auto text-white rounded-full border from-violet-600 to-fuchsia-500">
+              <a
+                href="/#SEO&SEM"
+                className="rounded-full font-semibold bg-gradient-to-r from-purple-600 via-purple-500 to-fuchsia-500 text-white  w-full items-center justify-center flex  mt-auto text-2xl py-3 transition duration-300 ease-in-out transform hover-bg hover:scale-105 hover:shadow-lg"
+              >
                 Saber más
-              </button>
+              </a>
             </div>
-            <div className="bg-white flex flex-col gap-4 py-10 p-5 w-96">
+            <div
+              data-aos="flip-up"
+              data-aos-anchor-placement="center-bottom"
+              className="bg-white flex flex-col gap-4 py-10 p-5 w-96"
+            >
               <p className="text-4xl font-bold  text-fuchsia-500">
                 *DESARROLLO Y DISEÑO WEB
               </p>
@@ -136,11 +180,18 @@ const Project = () => {
                 Desarrollamos sitios web efectivos e impactantes que promueven
                 tu marca y atraen a los usuarios.
               </p>
-              <button className="py-3 bg-gradient-to-r mt-auto text-3xl text-white rounded-full border from-violet-600 to-fuchsia-500">
+              <a
+                href="/#Desarrollo&DiseñoWeb"
+                className="rounded-full font-semibold bg-gradient-to-r from-purple-600 via-purple-500 to-fuchsia-500 text-white  w-full items-center justify-center flex  mt-auto text-2xl py-3 transition duration-300 ease-in-out transform hover-bg hover:scale-105 hover:shadow-lg"
+              >
                 Saber más
-              </button>
+              </a>
             </div>
-            <div className="bg-white flex flex-col gap-4 py-10 p-5 w-96">
+            <div
+              data-aos="flip-left"
+              data-aos-anchor-placement="center-bottom"
+              className="bg-white flex flex-col gap-4 py-10 p-5 w-96"
+            >
               <p className="text-4xl font-bold text-fuchsia-500">
                 *SOCIAL MEDIA MAGNAMENT
               </p>
@@ -148,9 +199,12 @@ const Project = () => {
                 Gestionamos tus redes sociales para construir y mantener una
                 fuerte presencia online.
               </p>
-              <button className="py-3 bg-gradient-to-r mt-auto text-3xl text-white rounded-full border from-violet-600 to-fuchsia-500">
+              <a
+                href="/#SocialMediaMagnament"
+                className="rounded-full font-semibold bg-gradient-to-r from-purple-600 via-purple-500 to-fuchsia-500 text-white  w-full items-center justify-center flex  mt-auto text-2xl py-3 transition duration-300 ease-in-out transform hover-bg hover:scale-105 hover:shadow-lg"
+              >
                 Saber más
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -166,7 +220,11 @@ const Project = () => {
       >
         <div className="flex flex-col gap-52 items-center ml-96 justify-center">
           <div className="flex flex-row ml-10 gap-60">
-            <div className="bg-white flex flex-col gap-4 py-10 p-5 w-96">
+            <div
+              className="bg-white flex flex-col gap-4 py-10 p-5 w-96"
+              data-aos="flip-down"
+              data-aos-anchor-placement="center-bottom"
+            >
               <p className="text-4xl font-bold text-fuchsia-500">
                 *DIGITAL MARKETING
               </p>
@@ -175,11 +233,18 @@ const Project = () => {
                 campañas de email marketing hasta publicidad digital y marketing
                 de contenidos.
               </p>
-              <button className="py-3 bg-gradient-to-r text-3xl mt-auto text-white rounded-full border from-violet-600 to-fuchsia-500">
+              <a
+                href="/#DigitalMarketing"
+                className="rounded-full font-semibold bg-gradient-to-r from-purple-600 via-purple-500 to-fuchsia-500 text-white  w-full items-center justify-center flex  mt-auto text-2xl py-3 transition duration-300 ease-in-out transform hover-bg hover:scale-105 hover:shadow-lg"
+              >
                 Saber más
-              </button>
+              </a>
             </div>
-            <div className="bg-white flex flex-col justify-center gap-4 py-10 p-5 w-96">
+            <div
+              className="bg-white flex flex-col justify-center gap-4 py-10 p-5 w-96"
+              data-aos="flip-up"
+              data-aos-anchor-placement="center-bottom"
+            >
               <p className="text-4xl font-bold py-5 text-fuchsia-500">
                 *CONSULTING
               </p>
@@ -187,13 +252,20 @@ const Project = () => {
                 Ofrecemos consultoría en marketing digital para ayudarte a
                 identificar oportunidades y diseñar estrategias efectivas.
               </p>
-              <button className="py-3 bg-gradient-to-r mt-auto text-3xl text-white rounded-full border from-violet-600 to-fuchsia-500">
+              <a
+                href="/#Consulting"
+                className="rounded-full font-semibold bg-gradient-to-r from-purple-600 via-purple-500 to-fuchsia-500 text-white  w-full items-center justify-center flex  mt-auto text-2xl py-3 transition duration-300 ease-in-out transform hover-bg hover:scale-105 hover:shadow-lg"
+              >
                 Saber más
-              </button>
+              </a>
             </div>
           </div>
         </div>
-        <div className="text-white text-3xl mx-60 ">
+        <div
+          className="text-white text-3xl mx-60 "
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
           Nuestra misión es proporcionar soluciones de marketing digital
           accesibles y efectivas para pequeñas y medianas empresas.
         </div>
@@ -204,34 +276,62 @@ const Project = () => {
         className="flex h-screen pt-40 justify-end w-full bg-cover bg-center"
       >
         <div className="flex flex-col ">
-          <p className="text-6xl font-raleway font-bold text-shadow shadow-3xl text-white ml-auto mr-40">
+          <p
+            data-aos="fade-down-left"
+            data-aos-anchor-placement="center-bottom"
+            className="text-6xl font-raleway font-bold text-shadow shadow-3xl text-white ml-auto mr-40"
+          >
             NUESTROS VALORES
           </p>
           <div className="mt-16 flex flex-col gap-48">
             <div className="flex flex-row items-center justify-center ml-auto h-20 w-2/4 mr-72">
-              <p className="text-3xl font-raleway mr-60 px-8 py-5 flex items-center justify-center rounded-full font-bold text-white bg-purple-700">
+              <p
+                data-aos="fade-down-right"
+                data-aos-anchor-placement="center-bottom"
+                className="text-3xl font-raleway mr-60 px-8 py-5 flex items-center justify-center rounded-full font-bold text-white bg-purple-700"
+              >
                 TRANSPARENCIA
               </p>
-              <p className="h-full italic font-sans w-3/4 pr-30 mr-0 text-white text-xl font-semibold">
+              <p
+                data-aos="fade-left"
+                data-aos-anchor-placement="center-bottom"
+                className="h-full italic font-sans w-3/4 pr-30 mr-0 text-white text-xl font-semibold"
+              >
                 Damos prioridad a la honestidad y la claridad en todas nuestras
                 interacciones, asegurándonos de que estés informado y cómodo con
                 cada paso del proceso.
               </p>
             </div>
             <div className="flex flex-row items-center justify-center ml-auto h-20 w-2/4 mr-72">
-              <p className="text-3xl font-raleway mr-60 px-14 py-5 flex items-center justify-center rounded-full font-bold text-white bg-purple-700">
+              <p
+                data-aos="fade-right"
+                data-aos-anchor-placement="center-bottom"
+                className="text-3xl font-raleway mr-60 px-14 py-5 flex items-center justify-center rounded-full font-bold text-white bg-purple-700"
+              >
                 COMPROMISO
               </p>
-              <p className="h-full italic font-sans w-3/4 pr-30 mr-0 text-white text-xl font-semibold">
+              <p
+                data-aos="fade-left"
+                data-aos-anchor-placement="center-bottom"
+                className="h-full italic font-sans w-3/4 pr-30 mr-0 text-white text-xl font-semibold"
+              >
                 Nos dedicamos a cada proyecto con la misma pasión y
                 determinación que si fuera nuestro propio negocio.
               </p>
             </div>
             <div className="flex flex-row items-center justify-center ml-auto h-20 w-2/4 mr-72">
-              <p className="text-3xl font-raleway mr-60 px-16 py-5 flex items-center justify-center rounded-full font-bold text-white bg-purple-700">
+              <p
+                data-aos="fade-up-right"
+                data-aos-anchor-placement="center-bottom"
+                className="text-3xl font-raleway mr-60 px-16 py-5 flex items-center justify-center rounded-full font-bold text-white bg-purple-700"
+              >
                 INNOVACIÓN
               </p>
-              <p className="h-full italic font-sans w-3/4 pr-30 mr-0 text-white text-xl font-semibold">
+              <p
+                data-aos="fade-left"
+                data-aos-anchor-placement="center-bottom"
+                className="h-full italic font-sans w-3/4 pr-30 mr-0 text-white text-xl font-semibold"
+              >
                 Siempre buscamos nuevas formas de mejorar y mantenernos al día
                 con las últimas tendencias y tecnologías del marketing digital.
               </p>
@@ -240,6 +340,7 @@ const Project = () => {
         </div>
       </section>
       <section
+        id="SEO&SEM"
         style={{ backgroundImage: `url(${service1})` }}
         className="flex h-screen pt-60 justify-start  w-full bg-cover bg-center"
       >
@@ -267,6 +368,7 @@ const Project = () => {
       </section>
       <section
         style={{ backgroundImage: `url(${service2})` }}
+        id="Desarrollo&DiseñoWeb"
         className="flex h-screen flex-col justify-center items-center w-full bg-cover bg-center"
       >
         <div className=" flex flex-col ml-56 justify-center w-3/5 items-center gap-20">
@@ -298,6 +400,7 @@ const Project = () => {
         </div>
       </section>
       <section
+        id="SocialMediaMagnament"
         style={{ backgroundImage: `url(${service1})` }}
         className="flex h-screen pt-60 justify-start  w-full bg-cover bg-center"
       >
@@ -329,6 +432,7 @@ const Project = () => {
         </div>
       </section>
       <section
+        id="DigitalMarketing"
         style={{ backgroundImage: `url(${service2})` }}
         className="flex h-screen flex-col justify-center items-center w-full bg-cover bg-center"
       >
@@ -360,6 +464,7 @@ const Project = () => {
         </div>
       </section>
       <section
+        id="Consulting"
         style={{ backgroundImage: `url(${service1})` }}
         className="flex h-screen pt-60 justify-start  w-full bg-cover bg-center"
       >
@@ -387,87 +492,106 @@ const Project = () => {
         </div>
       </section>
       <section
+        id="contacto"
         style={{ backgroundImage: `url(${unique})` }}
-        className="min-h-screen flex flex-col justify-center pl-40 p-8 text-white bg-cover bg-center"
+        className="min-h-screen flex flex-col justify-center pl-40 p-8 text-white bg-cover bg-center relative"
       >
-        <div className="max-w-lg  bg-opacity-10">
-          <h2 className="text-4xl font-semibold mb-4">CONTACTO</h2>
-          <p className="mb-8 text-lg">
-            ¿Listo para transformar tu marketing digital?
-            <br />
-            Ponte en contacto con nosotros hoy mismo. Estamos aquí para ayudarte
-            a alcanzar tus metas.
-          </p>
-          <form className="space-y-4">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-2">
-                Nombre y apellido*
-              </label>
-              <input
-                type="text"
-                id="name"
-                className="w-full bg-transparent border-b-2 border-white focus:border-pink-500 outline-none py-1"
-                required
-              />
+        <div className="bg-opacity-10 w-full">
+          <div className=" h-full">
+            <div className="max-w-xl">
+              <h2 className="text-4xl font-semibold mb-4 font-nunito">
+                CONTACTO
+              </h2>
+              <p className="mb-8 text-xl font-sans">
+                ¿Listo para transformar tu marketing digital?
+                <br />
+                Ponte en contacto con nosotros hoy mismo. Estamos aquí para
+                ayudarte a alcanzar tus metas.
+              </p>
             </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium mb-2">
-                Correo electrónico*
-              </label>
-              <input
-                type="email"
-                id="email"
-                className="w-full bg-transparent border-b-2 border-white focus:border-pink-500 outline-none py-1"
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                Teléfono*
-              </label>
-              <input
-                type="tel"
-                id="phone"
-                className="w-full bg-transparent border-b-2 border-white focus:border-pink-500 outline-none py-1"
-                required
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="message"
-                className="block text-sm font-medium mb-2"
-              >
-                Su mensaje*
-              </label>
-              <textarea
-                id="message"
-                rows="4"
-                className="w-full bg-transparent border-b-2 border-white focus:border-pink-500 outline-none py-1"
-                required
-              ></textarea>
-            </div>
-            <div className="text-center mt-8">
-              <button
-                type="submit"
-                className="rounded-full font-semibold bg-gradient-to-r from-purple-600 via-purple-500 to-fuchsia-500 text-white text-lg px-6 py-3 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2"
-              >
-                ENVIAR CONSULTA
-              </button>
-            </div>
-          </form>
-          <div className="flex justify-center mt-8 space-x-6">
-            <a
-              href="#"
-              className="text-xl hover:text-pink-500 transition duration-300 ease-in-out"
-            >
-              <i className="fab fa-facebook"></i>
-            </a>
-            <a
-              href="#"
-              className="text-xl hover:text-pink-500 transition duration-300 ease-in-out"
-            >
-              <i className="fab fa-instagram"></i>
-            </a>
+
+            <form className="space-y-4 ">
+              <div className="max-w-sm">
+                <div>
+                  <label
+                    htmlFor="name"
+                    className="block text-lg font-medium mb-2"
+                  >
+                    Nombre y apellido*
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    className="w-full bg-transparent border-b-2 border-white focus:border-pink-500 outline-none py-1"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="block text-lg font-medium mb-2"
+                  >
+                    Correo electrónico*
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    className="w-full bg-transparent border-b-2 border-white focus:border-pink-500 outline-none py-1"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="phone"
+                    className="block text-lg font-medium mb-2"
+                  >
+                    Teléfono*
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    className="w-full bg-transparent border-b-2 border-white focus:border-pink-500 outline-none py-1"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="message"
+                    className="block text-lg font-medium mb-2"
+                  >
+                    Su mensaje*
+                  </label>
+                  <textarea
+                    id="message"
+                    rows="4"
+                    className="w-full bg-transparent border-b-2 border-white focus:border-pink-500 outline-none py-1"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <div className="flex items-center mt-auto ">
+                <button
+                  type="submit"
+                  className="rounded-full w-96 flex items-center justify-center font-semibold bg-gradient-to-r from-purple-600 via-purple-500 to-fuchsia-500 text-white text-lg px-6 py-3 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2"
+                >
+                  ENVIAR CONSULTA
+                </button>
+                <div className="justify-end flex items-end space-x-6 ml-auto   pr-8">
+                  <a
+                    href="#"
+                    className="text-4xl hover:text-pink-500 transition duration-300 ease-in-out"
+                  >
+                    <FaFacebookF />
+                  </a>
+                  <a
+                    href="#"
+                    className="text-4xl hover:text-pink-500 transition duration-300 ease-in-out"
+                  >
+                    <FaInstagram />
+                  </a>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </section>

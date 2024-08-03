@@ -26,15 +26,15 @@ const Project = () => {
   });
 
   return (
-    <div className="h-full w-full overflow-x-hidden">
+    <div className="h-full w-full overflow-x-hidden overflow-hidden">
       <Nav className="bg-transparent" />
       <section
-        id="#landing"
-        className="flex justify-start items-center bg-cover bg-center overflow-x-hidden h-screen w-full"
+        id="landing"
+        className="flex justify-start items-center bg-cover bg-center overflow-hidden h-screen w-full"
         style={{ backgroundImage: `url(${first})` }}
       >
         <div className="text-white lg:ml-40 ml-10 lg:gap-6 gap-4">
-          <div className="lg:text-8xl text-6xl md:text-7xl flex flex-col gap-0 p-0 leading-none">
+          <div className="lg:text-8xl sm:text-6xl text-5xl md:text-7xl flex flex-col gap-0 p-0 leading-none">
             <p className="m-0 text-shadow font-raleway">DIGITAL</p>
             <p className="m-0 text-shadow font-raleway">MARKETING</p>
           </div>

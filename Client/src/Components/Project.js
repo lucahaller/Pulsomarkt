@@ -543,14 +543,14 @@ const Project = () => {
                 personalizadas que generan resultados medibles.
               </p>
             </div>
-            <button
+            <a
               href="/#contacto"
               data-aos="fade-up-right"
               data-aos-anchor-placement="center-bottom"
               className="rounded-full hover:border-2 hover:border-fuchsia-200 border-2 border-purple-600 text-white font-semibold bg-gradient-to-r from-purple-600 via-purple-500 to-fuchsia-500 text-base md:text-lg lg:text-xl w-fit px-4 md:px-5 lg:px-6 py-2 md:py-3 lg:py-4 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-purple-700 hover:shadow-lg"
             >
               Contratar este servicio
-            </button>
+            </a>
           </div>
         </div>
       </section>

@@ -6,7 +6,7 @@ export default function Nav() {
     <Navbar
       fluid
       rounded
-      className="fixed avsolute z-20 w-full bg-blue-700 dark:bg-blue-800 dark:backdrop-blur-lg" // Aquí añadimos la clase de desenfoque
+      className="fixed avsolute z-20 w-full bg-blue-800 dark:bg-blue-800 dark:backdrop-blur-lg" // Aquí añadimos la clase de desenfoque
     >
       <Navbar.Brand className="ml-10">
         <img

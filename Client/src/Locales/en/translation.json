@@ -1,0 +1,120 @@
+{
+  "landing": {
+    "digital": "DIGITAL",
+    "marketing": "MARKETING",
+    "webSolutions": "AND WEB SOLUTIONS"
+  },
+  "about": {
+    "title": "Boost your online presence",
+    "subtitle": "with",
+    "companyName": "Pulsomarkt",
+    "services": "Specializing in SEO, websites, and social media marketing, we have the perfect solution for every need.",
+    "joinUs": "Join us and discover how we can increase your visibility, reach your target audience, and grow your business sustainably."
+  },
+  "priority": {
+    "title": "Your success is our priority",
+    "understanding": "At Pulsomarkt, we understand that every business is unique and deserves a tailored digital marketing strategy.",
+    "working": "That's why we work closely with you to understand your goals and design a plan that perfectly fits your needs.",
+    "contact": "Contact"
+  },
+  "services": {
+    "intro": "Explore our personalized services for every digital need.",
+    "cta": "We have the perfect strategy for you!",
+    "cards": [
+      {
+        "title": "SEO & SEM",
+        "description": "Boost your online visibility with our SEO and SEM strategies. We improve your search engine rankings.",
+        "linkText": "Learn more"
+      },
+      {
+        "title": "WEB DEVELOPMENT & DESIGN",
+        "description": "We develop effective and impactful websites that promote your brand and attract users.",
+        "linkText": "Learn more"
+      },
+      {
+        "title": "SOCIAL MEDIA MANAGEMENT",
+        "description": "We manage your social media to build and maintain a strong online presence.",
+        "linkText": "Learn more"
+      }
+    ]
+  },
+  "mission": {
+    "cards": [
+      {
+        "title": "DIGITAL MARKETING",
+        "description": "We develop comprehensive digital marketing strategies. From email marketing campaigns to digital advertising and content marketing.",
+        "linkText": "Learn more"
+      },
+      {
+        "title": "CONSULTING",
+        "description": "We offer digital marketing consulting to help you identify opportunities and design effective strategies.",
+        "linkText": "Learn more"
+      }
+    ],
+    "text": "Our mission is to provide accessible and effective digital marketing solutions for small and medium-sized businesses."
+  },
+  "values": {
+    "title": "OUR VALUES",
+    "items": [
+      {
+        "title": "TRANSPARENCY",
+        "description": "We prioritize honesty and clarity in all our interactions, ensuring you are informed and comfortable with every step of the process."
+      },
+      {
+        "title": "COMMITMENT",
+        "description": "We dedicate ourselves to each project with the same passion and determination as if it were our own business."
+      },
+      {
+        "title": "INNOVATION",
+        "description": "We are always looking for new ways to improve and stay up-to-date with the latest trends and technologies in digital marketing."
+      }
+    ]
+  },
+  "seoSem": {
+    "title": "Stop Being Invisible with Our SEO & SEM Services!",
+    "descriptionTitle": "SEO & SEM. Ads and Search Engine Optimization.",
+    "descriptionBody": "Want to appear at the top of Google? Our SEO service optimizes your website to attract organic traffic. Improve your ranking, increase your credibility, and enjoy a steady flow of visitors to your website.",
+    "buttonText": "Hire this service"
+  },
+  "webDesignDevelopment": {
+    "title": "Transform Your Online Presence with Our Web Development and Design",
+    "description1": "Need a website that reflects your business’s essence, captures attention, and converts visitors into clients? Our web design service creates attractive, intuitive, and brand-aligned sites.",
+    "description2": "Additionally, we build robust, secure, and scalable platforms that work seamlessly across all devices. From e-commerce to custom solutions, we bring your ideas to life.",
+    "buttonText": "Hire this service"
+  },
+  "socialMediaManagement": {
+    "title": "Social Media Management: Connect with Your Audience",
+    "description1": "Want to stand out on social media? We manage your social networks and take care of creating engaging content, interacting with your audience, and building a loyal community. Increase your presence on platforms like Facebook, Instagram, and Twitter.",
+    "description2": "Transform your social media into a powerful marketing tool and discover how we can help you connect and grow.",
+    "buttonText": "Hire this service"
+  },
+  "digitalMarketing": {
+    "title": "Digital Marketing: Maximize Your Online Impact",
+    "description1": "Take your business to the next level with our Digital Marketing strategies. We design effective strategies to maximize your return on investment, monitor, and adjust your campaigns to ensure ongoing success.",
+    "description2": "From email campaigns to content marketing and online advertising, we create customized strategies that generate measurable results.",
+    "buttonText": "Hire this service"
+  },
+  "contact": {
+    "title": "CONTACT",
+    "description": "Ready to transform your digital marketing? Get in touch with us today. We are here to help you achieve your goals.",
+    "nameLabel": "Full Name*",
+    "emailLabel": "Email Address*",
+    "phoneLabel": "Phone Number*",
+    "messageLabel": "Your Message*",
+    "submitButton": "SEND QUERY",
+    "facebook": "Facebook",
+    "instagram": "Instagram"
+  },
+  "DESARROLLOYDISEÑOWEB": "WEBDEVELOPMENT&DESIGN",
+  "SOCIALMEDIAMANAGEMENT": "SOCIALMEDIAMANAGEMENT",
+  "DIGITALMARKETING": "DIGITALMARKETING",
+  "CONSULTING": "CONSULTING",
+
+  "CONSULTING_TITLE": "Consulting: Your Digital Growth Advisory",
+  "CONSULTING_TEXT": "Do you need guidance to improve your digital strategy? We evaluate your current situation and design an effective action plan. Our Consulting service offers personalized advice to help you identify opportunities, resolve challenges, and maximize your growth.",
+  "HIRE_SERVICE": "Hire This Service",
+  "HOME": "Home",
+  "SERVICES": "Services",
+  "ABOUT": "About Us",
+  "CONTACT": "Contact"
+}

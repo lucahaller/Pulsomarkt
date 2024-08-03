@@ -1,0 +1,120 @@
+{
+  "landing": {
+    "digital": "DIGITAL",
+    "marketing": "MARKETING",
+    "webSolutions": "Y SOLUCIONES WEB"
+  },
+  "about": {
+    "title": "Potencia tu presencia",
+    "subtitle": "digital con",
+    "companyName": "Pulsomarkt",
+    "services": "Especializados en SEO, páginas web y marketing en redes sociales, tenemos la solución perfecta para cada necesidad.",
+    "joinUs": "Únete a nosotros y descubre cómo podemos aumentar tu visibilidad, atraer a tu público objetivo y hacer crecer tu negocio de manera sostenible."
+  },
+  "priority": {
+    "title": "Tu éxito es nuestra prioridad",
+    "understanding": "En Pulsomarkt, entendemos que cada negocio es único y merece una estrategia de marketing digital a su medida.",
+    "working": "Por eso trabajamos estrechamente contigo para entender tus objetivos y diseñar un plan que se ajuste perfectamente a tus necesidades.",
+    "contact": "Contactar"
+  },
+  "services": {
+    "intro": "Explora nuestros servicios personalizados para cada necesidad digital.",
+    "cta": "¡Tenemos la estrategia perfecta para ti!",
+    "cards": [
+      {
+        "title": "SEO & SEM",
+        "description": "Aumenta tu visibilidad online con nuestras estrategias de SEO y SEM. Mejoramos tu posicionamiento en los motores de búsqueda.",
+        "linkText": "Saber más"
+      },
+      {
+        "title": "DESARROLLO Y DISEÑO WEB",
+        "description": "Desarrollamos sitios web efectivos e impactantes que promueven tu marca y atraen a los usuarios.",
+        "linkText": "Saber más"
+      },
+      {
+        "title": "GESTIÓN DE REDES SOCIALES",
+        "description": "Gestionamos tus redes sociales para construir y mantener una fuerte presencia online.",
+        "linkText": "Saber más"
+      }
+    ]
+  },
+  "mission": {
+    "cards": [
+      {
+        "title": "MARKETING DIGITAL",
+        "description": "Desarrollamos estrategias integrales de marketing digital. Desde campañas de email marketing hasta publicidad digital y marketing de contenidos.",
+        "linkText": "Saber más"
+      },
+      {
+        "title": "CONSULTORÍA",
+        "description": "Ofrecemos consultoría en marketing digital para ayudarte a identificar oportunidades y diseñar estrategias efectivas.",
+        "linkText": "Saber más"
+      }
+    ],
+    "text": "Nuestra misión es proporcionar soluciones de marketing digital accesibles y efectivas para pequeñas y medianas empresas."
+  },
+  "values": {
+    "title": "NUESTROS VALORES",
+    "items": [
+      {
+        "title": "TRANSPARENCIA",
+        "description": "Damos prioridad a la honestidad y la claridad en todas nuestras interacciones, asegurándonos de que estés informado y cómodo con cada paso del proceso."
+      },
+      {
+        "title": "COMPROMISO",
+        "description": "Nos dedicamos a cada proyecto con la misma pasión y determinación que si fuera nuestro propio negocio."
+      },
+      {
+        "title": "INNOVACIÓN",
+        "description": "Siempre buscamos nuevas formas de mejorar y mantenernos al día con las últimas tendencias y tecnologías del marketing digital."
+      }
+    ]
+  },
+  "seoSem": {
+    "title": "¡Deja de ser Invisible con Nuestros Servicios de SEO & SEM!",
+    "descriptionTitle": "SEO & SEM. Anuncios y Optimización para motores de búsqueda.",
+    "descriptionBody": "¿Quieres aparecer en los primeros lugares de Google? Nuestro servicio de SEO optimiza tu sitio web para atraer tráfico orgánico. Mejora tu posicionamiento, aumenta tu credibilidad y disfruta de un flujo constante de visitantes en tu página web.",
+    "buttonText": "Contratar este servicio"
+  },
+  "webDesignDevelopment": {
+    "title": "Transforma Tu Presencia Online con Nuestro Desarrollo y Diseño Web",
+    "description1": "¿Necesitas una web que refleje la esencia de tu negocio, capte la atención y convierta visitantes en clientes? Nuestro servicio de diseño web crea sitios atractivos, intuitivos y adaptados a tu marca.",
+    "description2": "Además, construimos plataformas robustas, seguras y escalables que funcionan a la perfección en todos los dispositivos. Desde e-commerce hasta soluciones personalizadas, hacemos realidad tus ideas.",
+    "buttonText": "Contratar este servicio"
+  },
+  "socialMediaManagement": {
+    "title": "Social Media Management: Conecta con Tu Audiencia",
+    "description1": "¿Quieres destacar en redes sociales? Gestionamos tus redes sociales y nos encargamos de crear contenido atractivo, interactuar con tu audiencia y construir una comunidad leal. Aumenta tu presencia en plataformas como Facebook, Instagram y Twitter.",
+    "description2": "Transforma tus redes sociales en una poderosa herramienta de marketing y descubre cómo podemos ayudarte a conectar y crecer.",
+    "buttonText": "Contratar este servicio"
+  },
+  "digitalMarketing": {
+    "title": "Digital Marketing: Maximiza Tu Impacto en Línea",
+    "description1": "Lleva tu negocio al siguiente nivel con nuestras estrategias de Digital Marketing. Diseñamos estrategias eficientes que maximizan tu retorno de inversión, monitoreamos y ajustamos tus campañas para asegurar el éxito continuo.",
+    "description2": "Desde campañas de correo electrónico hasta marketing de contenidos y publicidad online, creamos estrategias personalizadas que generan resultados medibles.",
+    "buttonText": "Contratar este servicio"
+  },
+  "contact": {
+    "title": "CONTACTO",
+    "description": "¿Listo para transformar tu marketing digital? Ponte en contacto con nosotros hoy mismo. Estamos aquí para ayudarte a alcanzar tus metas.",
+    "nameLabel": "Nombre y apellido*",
+    "emailLabel": "Correo electrónico*",
+    "phoneLabel": "Teléfono*",
+    "messageLabel": "Su mensaje*",
+    "submitButton": "ENVIAR CONSULTA",
+    "facebook": "Facebook",
+    "instagram": "Instagram"
+  },
+  "DESARROLLOYDISEÑOWEB": "DESARROLLOYDISEÑOWEB",
+  "SOCIALMEDIAMANAGEMENT": "GESTIÓNDEREDESSOCIALES",
+  "DIGITALMARKETING": "MARKETINGDIGITAL",
+  "CONSULTING": "CONSULTORÍA",
+
+  "CONSULTING_TITLE": "Consulting: Asesoría para tu Crecimiento Digital",
+  "CONSULTING_TEXT": "¿Necesitas orientación para mejorar tu estrategia digital? Evaluamos tu situación actual y diseñamos un plan de acción efectivo. Nuestro servicio de Consulting ofrece una asesoría personalizada para ayudarte a identificar oportunidades, resolver desafíos y maximizar tu crecimiento.",
+  "HIRE_SERVICE": "Contratar este servicio",
+  "HOME": "Inicio",
+  "SERVICES": "Servicios",
+  "ABOUT": "Sobre Nosotros",
+  "CONTACT": "Contacto"
+}

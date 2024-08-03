@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../Assets/Images/logo.png";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -30,29 +33,30 @@ export default function Nav() {
           >
             {isOpen ? <FaTimes /> : <FaBars />}
           </button>
+          <LanguageSwitcher />
           <a
             href="/"
             className="block lg:inline-block py-2 px-4 hover:text-blue-200"
           >
-            Inicio
+            {t("HOME")}
           </a>
           <a
             href="/#services"
             className="block lg:inline-block py-2 px-4 hover:text-blue-200"
           >
-            Servicios
+            {t("SERVICES")}
           </a>
           <a
             href="/#about"
             className="block lg:inline-block py-2 px-4 hover:text-blue-200"
           >
-            Sobre Nosotros
+            {t("ABOUT")}
           </a>
           <a
             href="/#contacto"
             className="block lg:inline-block py-2 px-4 hover:text-blue-200"
           >
-            Contacto
+            {t("CONTACT")}
           </a>
         </div>
       </div>

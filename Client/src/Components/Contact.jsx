@@ -1,18 +1,22 @@
 import { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 import unique from "../Assets/Images/unique.png";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useTranslation } from "react-i18next";
+
 export default function Contact() {
+  const { t } = useTranslation();
+
   useEffect(() => {
     AOS.init({
       duration: 3000,
       delay: 200,
       once: false,
     });
-  });
+  }, []);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -27,7 +31,7 @@ export default function Contact() {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-  console.log(formData);
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -40,7 +44,7 @@ export default function Contact() {
       )
       .then(
         (result) => {
-          setSuccess("Tu mensaje ha sido enviado exitosamente.");
+          setSuccess(t("contact.successMessage"));
           setError("");
           setFormData({
             name: "",
@@ -50,9 +54,7 @@ export default function Contact() {
           });
         },
         (error) => {
-          setError(
-            "Hubo un error al enviar tu mensaje. Inténtalo de nuevo más tarde."
-          );
+          setError(t("contact.errorMessage"));
           setSuccess("");
         }
       );
@@ -73,9 +75,9 @@ export default function Contact() {
                 data-aos-anchor-placement="center-bottom"
                 className="text-4xl font-semibold font-nunito"
               >
-                CONTACTO
+                {t("contact.title")}
               </h2>
-              <div className="  justify-end flex items-end space-x-6 ml-auto pr-8 lg:hidden ">
+              <div className="justify-end flex items-end space-x-6 ml-auto pr-8 lg:hidden">
                 <a
                   data-aos="fade-up-left"
                   data-aos-anchor-placement="center-bottom"
@@ -100,10 +102,7 @@ export default function Contact() {
               data-aos-anchor-placement="center-bottom"
               className="mb-8 text-xl font-sans"
             >
-              ¿Listo para transformar tu marketing digital?
-              <br />
-              Ponte en contacto con nosotros hoy mismo. Estamos aquí para
-              ayudarte a alcanzar tus metas.
+              {t("contact.description")}
             </p>
           </div>
 
@@ -117,7 +116,7 @@ export default function Contact() {
                   htmlFor="name"
                   className="block text-lg font-medium mb-2"
                 >
-                  Nombre y apellido*
+                  {t("contact.nameLabel")}
                 </label>
                 <input
                   type="text"
@@ -137,7 +136,7 @@ export default function Contact() {
                   htmlFor="email"
                   className="block text-lg font-medium mb-2"
                 >
-                  Correo electrónico*
+                  {t("contact.emailLabel")}
                 </label>
                 <input
                   type="email"
@@ -157,7 +156,7 @@ export default function Contact() {
                   htmlFor="phone"
                   className="block text-lg font-medium mb-2"
                 >
-                  Teléfono*
+                  {t("contact.phoneLabel")}
                 </label>
                 <input
                   type="tel"
@@ -177,7 +176,7 @@ export default function Contact() {
                   htmlFor="message"
                   className="block text-lg font-medium mb-2"
                 >
-                  Su mensaje*
+                  {t("contact.messageLabel")}
                 </label>
                 <textarea
                   id="message"
@@ -199,9 +198,9 @@ export default function Contact() {
                 type="submit"
                 className="rounded-full w-96 flex items-center justify-center font-semibold bg-gradient-to-r from-purple-600 via-purple-500 to-fuchsia-500 text-white text-lg px-6 py-3 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2"
               >
-                ENVIAR CONSULTA
+                {t("contact.submitButton")}
               </button>
-              <div className="justify-end lg:flex items-end space-x-6 ml-auto pr-8 hidden ">
+              <div className="justify-end lg:flex items-end space-x-6 ml-auto pr-8 hidden">
                 <a
                   data-aos="fade-up"
                   data-aos-anchor-placement="center-bottom"

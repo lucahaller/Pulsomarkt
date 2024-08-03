@@ -27,7 +27,7 @@ const Project = () => {
 
   return (
     <div className="h-full w-full overflow-x-hidden overflow-hidden">
-      <Nav className="bg-transparent" />
+      <Nav className="" />
       <section
         id="landing"
         className="flex justify-start items-center bg-cover bg-center overflow-hidden h-screen w-full"

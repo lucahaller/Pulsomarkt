@@ -42,18 +42,6 @@ module.exports = {
         "text-dark": "2px 2px 4px rgba(0, 0, 0, 0.5)", // Ejemplo de sombra oscura
       },
     },
-    plugins: [
-      function ({ addUtilities }) {
-        addUtilities({
-          ".text-shadow": {
-            textShadow: "8px 8px 15px rgba(255, 255, 255, 0.9)", // Personaliza esta sombra
-          },
-          ".text-shadow-lg": {
-            textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)", // Personaliza esta sombra
-          },
-        });
-      },
-      require("flowbite/plugin", "tw-elements/plugin.cjs"),
-    ],
+    plugins: [require("flowbite/plugin"), require("tw-elements/dist/plugin")],
   },
 };

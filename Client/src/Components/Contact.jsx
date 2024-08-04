@@ -81,7 +81,7 @@ export default function Contact() {
                 <a
                   data-aos="fade-up-left"
                   data-aos-anchor-placement="center-bottom"
-                  href="#"
+                  href="https://www.facebook.com/profile.php?id=61563341117684"
                   className="lg:text-4xl text-2xl hover:text-pink-500 transition duration-300 ease-in-out"
                 >
                   <FaFacebookF />
@@ -204,7 +204,7 @@ export default function Contact() {
                 <a
                   data-aos="fade-up"
                   data-aos-anchor-placement="center-bottom"
-                  href="#"
+                  href="https://www.facebook.com/profile.php?id=61563341117684"
                   className="text-4xl hover:text-pink-500 transition duration-300 ease-in-out"
                 >
                   <FaFacebookF />
